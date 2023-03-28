@@ -10,12 +10,14 @@
 void puts_half(char *str)
 {
 	int len, i;
-	int half_len = len / 2;
+	int half_len = 0;
 
-	while (str[length] != '\0')
+	while (str[len] != '\0')
 	{
-		length++;
+		len++;
 	}
+
+	half_len = len / 2;
 
 	if (len % 2 == 0)
 	{
