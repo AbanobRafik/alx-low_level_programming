@@ -10,7 +10,7 @@
  *       * Return: 0 if successful, 1 if an error occurred.
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int mul;
 
@@ -20,10 +20,10 @@ int main (int argc, char *argv[])
 		return (1);
 	}
 
-	else 
+	else
 	{
 		mul = atoi(argv[1]) * atoi(argv[2]);
-		printf("%i\n",mul);
+		printf("%i\n", mul);
 	}
 	return (0);
 }
