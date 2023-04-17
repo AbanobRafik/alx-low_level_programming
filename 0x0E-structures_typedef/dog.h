@@ -1,27 +1,12 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef DOG_H
+#define DOG_H
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 4cdeb93b622a5ac982c89b37bbdba3cc1f2c6d9b
 /**
  *  * struct dog - a structure representing a dog
  *   * @name: the name of the dog (char *)
  *    * @age: the age of the dog (float)
  *     * @owner: the name of the owner of the dog (char *)
- *      *
-<<<<<<< HEAD
- */
-struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-};
-=======
- *       * Description: A structure representing a dog with a name,
- *        * age, and owner name.
  */
 
 struct dog
@@ -29,9 +14,17 @@ struct dog
 	char *name;
 	float age 
 	char *owner;
-}
+};
 
->>>>>>> 4cdeb93b622a5ac982c89b37bbdba3cc1f2c6d9b
+/**
+ *  * dog_t -Typedef for struct dog
+ */
 
+typedef struct dog dog_t;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 
 #endif
