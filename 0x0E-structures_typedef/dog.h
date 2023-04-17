@@ -1,18 +1,18 @@
 #ifndef DOG_H
 #define DOG_H
 
-
 /**
- *  * struct dog - a structure representing a dog
- *   * @name: the name of the dog (char *)
- *    * @age: the age of the dog (float)
- *     * @owner: the name of the owner of the dog (char *)
+ *  * struct dog - dog structure
+ *   *
+ *    * @name: name of dog
+ *     * @age: age of the dog
+ *      * @owner: dog owner
+ *       *
  */
-
 struct dog
 {
 	char *name;
-	float age 
+	float age;
 	char *owner;
 };
 
@@ -27,4 +27,4 @@ void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
 
-#endif
+#endif /* struct dog */
